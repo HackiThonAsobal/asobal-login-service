@@ -20,7 +20,7 @@ router.post("/login", async (req, res) => {
   });
 
   const html = loginTemplate({
-    url: `${process.env.FRONT_URL}/asobal?token=${token}`,
+    url: `${process.env.FRONT_URL}/#/asobal?token=${token}`,
   });
   
   const mailOptions = {
